@@ -7,12 +7,12 @@ class Ehentai extends ComicSource {
     // unique id of the source
     key = "ehentai"
 
-    version = "1.2.0"
+    version = "1.2.1"
 
     minAppVersion = "1.5.3"
 
     // update url
-    url = "https://cdn.jsdelivr.net/gh/venera-app/venera-configs@main/ehentai.js"
+    url = "https://raw.githubusercontent.com/Enhe12138/venera-configs/main/ehentai.js"
 
     /**
      * cached api key
@@ -1568,3 +1568,4 @@ class Ehentai extends ComicSource {
         },
     }
 }
+

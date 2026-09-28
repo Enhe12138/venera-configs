@@ -1110,3 +1110,4 @@ class JM extends ComicSource {
         },
     }
 }
+

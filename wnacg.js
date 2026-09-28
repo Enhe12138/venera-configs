@@ -789,3 +789,4 @@ class Wnacg extends ComicSource {
         },
     }
 }
+

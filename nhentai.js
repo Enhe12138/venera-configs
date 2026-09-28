@@ -7,12 +7,12 @@ class Nhentai extends ComicSource {
     // unique id of the source
     key = "nhentai"
 
-    version = "1.1.0"
+    version = "1.1.1"
 
     minAppVersion = "1.0.0"
 
     // update url
-    url = "https://cdn.jsdelivr.net/gh/venera-app/venera-configs@main/nhentai.js"
+    url = "https://raw.githubusercontent.com/Enhe12138/venera-configs/main/nhentai.js"
 
     baseUrl = "https://nhentai.net"
     apiBaseUrl = "https://nhentai.net/api/v2"
@@ -1807,3 +1807,4 @@ class Nhentai extends ComicSource {
         "11924":"kagerou imaizumi",
     };
 }
+

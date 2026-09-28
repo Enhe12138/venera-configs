@@ -5,12 +5,12 @@ class HComic extends ComicSource {
     // Unique id of the source
     key = "hcomic"
 
-    version = "1.0.0"
+    version = "1.0.1"
 
     minAppVersion = "1.6.0"
 
     // Update url
-    url = "https://cdn.jsdelivr.net/gh/venera-app/venera-configs@main/hcomic.js"
+    url = "https://raw.githubusercontent.com/Enhe12138/venera-configs/main/hcomic.js"
 
     baseUrl = "https://h-comic.com"
 
@@ -258,7 +258,7 @@ class HComic extends ComicSource {
             
             let cover = c.thumbnail;
             if (!cover && c.comic_source && c.media_id) {
-                cover = `https://h-comic.link/api/${c.comic_source}/${c.media_id}/pages/1`;
+                cover = `https://h-comic.com/api/${c.comic_source}/${c.media_id}/pages/1`;
             }
 
             let tags = {};
@@ -301,7 +301,7 @@ class HComic extends ComicSource {
 
             let images = [];
             for (let i = 1; i <= numPages; i++) {
-                images.push(`https://h-comic.link/api/${source}/${mediaId}/pages/${i}`);
+                images.push(`https://h-comic.com/api/${source}/${mediaId}/pages/${i}`);
             }
 
             return { images: images };
@@ -331,3 +331,4 @@ class HComic extends ComicSource {
         enableTagsTranslate: false,
     }
 }
+
