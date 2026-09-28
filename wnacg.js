@@ -7,7 +7,7 @@ class Wnacg extends ComicSource {
     // unique id of the source
     key = "wnacg"
 
-    version = "1.0.5"
+    version = "1.0.6"
 
     minAppVersion = "1.0.0"
 
@@ -114,6 +114,8 @@ class Wnacg extends ComicSource {
                         if (domain &&
                             domain.includes(".") &&
                             !domain.includes("wn01.link") &&
+                            domain !== "wnacg01.link" &&
+                            domain !== "wnacg02.link" &&
                             !domain.includes("google.cn") &&
                             !domain.includes("cdn-cgi") &&
                             !seenDomains.has(domain)) {
@@ -755,7 +757,7 @@ class Wnacg extends ComicSource {
                 title: "Custom Domain",
                 type: "input",
                 validator: String.raw`^(?!:\/\/)(?=.{1,253})([a-zA-Z0-9]([a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?\.)+[a-zA-Z]{2,}$`,
-                default: 'wnacg.com',
+                default: 'www.wn10.cfd',
             },
         }
     }
