@@ -1,11 +1,49 @@
-# venera-configs
+# Venera 图源订阅说明
 
-Configuration file repository for venera
+本仓库提供 Venera 漫画源。Venera 通过订阅地址读取源列表，你可以从列表中选择需要的图源安装。
 
-## Create a new configuration
+## 订阅地址
 
-1. Download `_template_.js`, `_venera_.js`, put them in the same directory
-2. Rename `_template_.js` to `your_config_name.js`
-3. Edit `your_config_name.js` to your needs. 
-   - The `_template_.js` file contains comments to help you with that. 
-   - The `_venera_.js` is used for code completion in your IDE.
+请先使用 GitHub Raw 地址。如果无法加载，再试 jsDelivr 地址。
+
+主地址：
+
+`https://raw.githubusercontent.com/Enhe12138/venera-configs/main/index.json`
+
+备用地址：
+
+`https://cdn.jsdelivr.net/gh/Enhe12138/venera-configs@main/index.json`
+
+## 添加订阅
+
+1. 打开 Venera，进入“漫画源”中的“源列表”或“仓库”页面。
+2. 添加仓库地址，并粘贴上面的主地址。
+3. 点击“刷新”，等图源列表加载后，选择需要的图源并添加。
+
+不同版本的 Venera 可能使用不同的页面名称。
+
+## 更新图源
+
+打开已添加的仓库并刷新列表。如果 Venera 显示某个已安装图源有更新，请按 App 内的提示更新。只刷新漫画网站页面，不会更新图源脚本。
+
+## 移除图源
+
+在 Venera 的已安装图源列表中找到不需要的图源，再使用 App 提供的删除或移除操作。页面名称可能因版本不同而变化。
+
+## 成人向图源
+
+以下图源含成人向内容，并已在源列表中标注 `[NSFW]`。请成年人按需添加。
+
+禁漫天堂、紳士漫畫（WNACG）、E-Hentai、nhentai、Hitomi.la、18漫画、H-Comic、热辣漫画。
+
+## 常见问题
+
+### 订阅地址无法导入
+
+请确认地址完整，并以 `index.json` 结尾。也可以在主地址和备用地址之间切换后重试。
+
+### 订阅已导入，但漫画网站打不开
+
+订阅地址负责提供图源列表和脚本。漫画网站还需要单独连接，所以导入成功不代表网站一定能访问。
+
+如果出现 DNS 错误或连接超时，请检查当前网络，并查看图源设置中是否提供了其他域名或分流。网站的地区限制、访问限制或临时故障也可能导致图源无法使用。
